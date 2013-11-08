@@ -206,7 +206,7 @@ public class LearningSwitch implements IOFMessageListener, IFloodlightModule {
 		if (match.getDataLayerType() != Ethernet.TYPE_IPv4 && match.getDataLayerType() != Ethernet.TYPE_ARP)
 			return Command.CONTINUE;
 		
-		logger.info("inpacket type: " + Integer.toHexString(match.getDataLayerType()));
+//		logger.info("inpacket type: " + Integer.toHexString(match.getDataLayerType()));
 		
 		switch (msg.getType()) {
 		case PACKET_IN:
