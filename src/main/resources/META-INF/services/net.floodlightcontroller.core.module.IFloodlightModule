@@ -26,6 +26,5 @@ net.floodlightcontroller.loadbalancer.LoadBalancer
 org.sdnplatform.sync.internal.SyncManager
 org.sdnplatform.sync.internal.SyncTorture
 net.floodlightcontroller.devicemanager.internal.DefaultEntityClassifier
-net.floodlightcontroller.mactracker.MACTracker
-edu.uw.cs.learningsw.LearningSwitch
-edu.wisc.cs.bootcamp.sdn.learningsw.LearningSwitch
+edu.uw.cs.sdn.learningsw.LearningSwitch
+edu.uw.cs.sdn.loadbalancer.LoadBalancer

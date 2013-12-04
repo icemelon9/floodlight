@@ -1,4 +1,4 @@
-package edu.uw.cs.learningsw;
+package edu.uw.cs.sdn.learningsw;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -206,11 +206,8 @@ public class LearningSwitch implements IOFMessageListener, IFloodlightModule {
 		if (match.getDataLayerType() != Ethernet.TYPE_IPv4 && match.getDataLayerType() != Ethernet.TYPE_ARP)
 			return Command.CONTINUE;
 		
-//		logger.info("inpacket type: " + Integer.toHexString(match.getDataLayerType()));
-		
 		switch (msg.getType()) {
 		case PACKET_IN:
-			logger.debug("Receive a packet from port {} !!!", match.getInputPort());
 			
 			if (LearningSwitch.CTRL_LEVEL == 1) {
 				// TODO:HUB
